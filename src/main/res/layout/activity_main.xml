@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:foregroundTint="#E4009688"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="362dp"
+        android:layout_height="235dp"
+        android:background="@drawable/forma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV1"
+        app:srcCompat="@drawable/torre" />
+
+    <TextView
+        android:id="@+id/TV1"
+        android:layout_width="345dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Scan"
+        style="@style/Syle_one"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/forma"
+        android:backgroundTint="#97201A1A"
+        android:drawableTint="#F4511E"
+        android:foregroundGravity="top"
+        android:foregroundTint="#1E88E5"
+        android:lineSpacingExtra="14sp"
+        android:shadowColor="#1B1C1C"
+        android:singleLine="true"
+        android:text="Escanear"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img" />
+
+    <Button
+        android:id="@+id/bt1"
+        style="@style/Syle_one"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/forma"
+        android:backgroundTint="#97201A1A"
+        android:text="Localizar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Scan" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
